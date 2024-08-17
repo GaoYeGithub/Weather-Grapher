@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <h1>Weather Map</h1>
+    <label for="layerSelect">Choose a weather layer:</label>
+    <select id="layerSelect">
+        <option value="clouds_new">Clouds</option>
+        <option value="precipitation_new">Precipitation</option>
+        <option value="pressure_new">Pressure</option>
+        <option value="wind_new">Wind</option>
+        <option value="temp_new">Temperature</option>
+    </select>
+    <div id="map" style="height: 500px;"></div>
+    <h2>Available Layers</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Layer</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>clouds_new</td>
+                <td>Cloud cover</td>
+            </tr>
+            <tr>
+                <td>precipitation_new</td>
+                <td>Precipitation</td>
+            </tr>
+            <tr>
+                <td>pressure_new</td>
+                <td>Atmospheric pressure</td>
+            </tr>
+            <tr>
+                <td>wind_new</td>
+                <td>Wind speed</td>
+            </tr>
+            <tr>
+                <td>temp_new</td>
+                <td>Temperature</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
